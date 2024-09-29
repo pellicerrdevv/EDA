@@ -17,7 +17,8 @@ int main(int argc, char *argv[])
 	
         double tiempo;
 
-	int *vector, *vectorOrdenado, rango=100000, numElementos=10000,i,repeticiones=0;
+	int *vector, *vectorOrdenado, rango=100000, numElementos=10000,i;
+	int repeticiones;
         
 	FILE *f;  
  	
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
 	        repeticiones=0;
 		vector = crearVector(numElementos,rango);
      		tiempoInicial = tiempoFinal= (double)clock();
-		while (tiempoFinal-tiempoInicial < tiempoMinimo) 
+		while (tiempoFinal-tiempoInicial < tiempoMinimo ||  repeticiones <= 100) 
 		{ 	vectorOrdenado = ordenarBurbuja(vector,numElementos);
 		        free(vectorOrdenado);	  
 			repeticiones++;
