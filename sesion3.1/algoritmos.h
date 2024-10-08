@@ -10,6 +10,8 @@
 #define MIN_T 10 * CLOCKS_PER_SEC
 #define MIN_REP 5
 
+extern long int contadorInterno, contadorMedio, contadorExterno, contadorMedio;
+
 
 void algA(int n);
 void algB(int n);

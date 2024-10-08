@@ -7,8 +7,6 @@
 #include <math.h>
 #include "algoritmos.h"
 
-long int contadorInterno, contadorMedio, contadorExterno, contadorMedio;
-
 // Orden cuadrático
 void algA(int n)
 { int i,j,c;

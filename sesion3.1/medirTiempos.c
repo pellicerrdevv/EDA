@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
 
         for (n=5000;n<=50000;n=5000+n) {
-                repeticiones=contadorExterno=contadorInterno=0;
+                repeticiones=contadorExterno=contadorInterno=contadorMedio=0;
 		tiempoInicial = tiempoFinal= (double)clock();
 		while ((tiempoFinal-tiempoInicial < MIN_T) || (repeticiones < MIN_REP))
 		{ 	algA(n) ;
