@@ -50,13 +50,9 @@ void verListaInverso(nodo *lista)
 { 
 
 if(lista != NULL){
-  verLista(lista->sig);
+  verListaInverso(lista->sig);
   printf("El valor de la lista es %d", lista->info);
 }
-
-
-
-
 
 
 
